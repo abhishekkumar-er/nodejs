@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="/scripts/angular.js"></script>
+</head>
+<body>
+<div>
+Plain Text: {{10+20}}
+</div>
+<form id="form1">
+<div ng-app="">
+Expression: {{10+20}}
+<br>
+<p> Enter your Name: <input type="text" ng-model="name"></p>
+<p>Hello <span ng-bind="name"></span>!</p>
+<br>
+<table border="0" class="auto-style1">
+<tr>
+<td><input type="checkbox" ng-model="enableDisableButton">Disable Button</td>
+<td><button ng-disabled="enableDisableButton">Click Me!</button></td>
+</tr>
+<tr>
+<td><input type="checkbox" ng-model="showHide">Show Button</td>
+<td><button ng-show="showHide">Click Me!</button></td>
+</tr>
+<tr>
+<td><p>Total click: {{clickCounter}}</p></td>
+<td><button ng-click="clickCounter=clickCounter +1">Click Me!</button></td>
+</tr>
+<tr>
+<td class="auto-style2">First Name</td>
+<td><input type"text" ng-model="FirstName"/> </td>
+</tr>
+<tr>
+<td class="auto-style2">Last Name</td>
+<td><input type"text" ng-model="LastName"/> </td>
+</tr><tr>
+<td class="auto-style2">Quantity</td>
+<td><input type"text" ng-model="Quantity"/> </td>
+</tr>
+<tr>
+<td class="auto-style2">Cost</td>
+<td><input type"text" ng-model="Cost" value="50"/> </td>
+</tr>
+<tr>
+<td class="auto-style2"><input type="button" value="Click Here" ng-click="message = FirstName + ' ' + LastName + ' has to pay ' + Cost * Quantity"/></td>
+<td>{{message}}</td>
+</tr>
+<tr>
+<td class="auto-style2"><span ng-bind="message"/></td>
+</tr>
+</table>
+</div>
+</form>
+</body>
+</html>

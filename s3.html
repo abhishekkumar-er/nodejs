@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AngularJS form Validation</title>
+<script src="angular.js"></script>
+<script src="script.js"></script>
+<style>
+input.ng-invalid{
+background-color: yellow;
+}
+input.ng-valid {
+background-color: lawngreen;
+}
+form.ng-pristine {
+background-color: aqua;
+}
+form.ng-dirty {
+background-color: mediumaquamarine;
+}
+</style></head>
+<body ng-app="">
+<form name="myform">
+<h2>My Form </h2>
+<input name="myName" ng-model="myName" placeholder="Enter your name" required >
+</form>
+</body>
+</html>

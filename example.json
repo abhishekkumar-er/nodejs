@@ -1,0 +1,26 @@
+[
+{
+ "firstName":"Abhi",
+  "lastName": "Kumar",
+  "gender": "Male",
+  "salary": 3500
+},
+{
+ "firstName":"Anju",
+  "lastName": "Kumari",
+  "gender": "Female",
+  "salary": 3900
+},
+{
+ "firstName":"Abhishek",
+  "lastName": "Kumar",
+  "gender": "Male",
+  "salary": 3400
+},
+{
+ "firstName":"Binod",
+  "lastName": "Singh",
+  "gender": "Male",
+  "salary": 3700
+}
+]
